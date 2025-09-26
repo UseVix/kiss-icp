@@ -22,15 +22,20 @@
 # SOFTWARE.
 import glob
 import os
+import point_cloud_transport_py
 import sys
 from pathlib import Path
 from typing import Sequence
-
+from sensor_msgs.msg import PointCloud2
 import natsort
 
-
+from kiss_icp.config import load_config
+from point_cloud_interfaces.msg import CompressedPointCloud2
+from std_msgs.msg import Header
+from builtin_interfaces.msg import Time
+from sensor_msgs.msg import PointField
 class RosbagDataset:
-    def __init__(self, data_dir: Path, topic: str, *_, **__):
+    def __init__(self, data_dir: Path, topic: str, config, *_, **__):
         """ROS1 / ROS2 bagfile dataloader.
 
         It can take either one ROS2 bag file or one or more ROS1 bag files belonging to a split bag.
@@ -38,6 +43,9 @@ class RosbagDataset:
 
         TODO: Merge mcap and rosbag dataloaders into 1
         """
+        self.codec=point_cloud_transport_py.PointCloudCodec()
+        print(config)
+        self.config=load_config(config)
         try:
             from rosbags.highlevel import AnyReader
         except ModuleNotFoundError:
@@ -64,6 +72,7 @@ class RosbagDataset:
             print("\n".join(natsort.natsorted([path.name for path in self.bag.paths])))
 
         self.bag.open()
+        print(self.config.compression.type)
         self.topic = self.check_topic(topic)
         self.n_scans = self.bag.topics[self.topic].msgcount
 
@@ -85,7 +94,11 @@ class RosbagDataset:
     def __getitem__(self, idx):
         connection, timestamp, rawdata = next(self.msgs)
         self.timestamps.append(self.to_sec(timestamp))
-        msg = self.bag.deserialize(rawdata, connection.msgtype)
+        if connection.msgtype=="point_cloud_interfaces/msg/CompressedPointCloud2":
+            msgser = self.codec.decode(self.config.compression.type, rawdata)
+            msg = self.bag.deserialize(msgser,"sensor_msgs/msg/PointCloud2")
+        else:
+            msg = self.bag.deserialize(rawdata, connection.msgtype)
         return self.read_point_cloud(msg)
 
     def reset(self):
@@ -106,7 +119,8 @@ class RosbagDataset:
         point_cloud_topics = [
             topic[0]
             for topic in self.bag.topics.items()
-            if topic[1].msgtype == "sensor_msgs/msg/PointCloud2"
+            if (topic[1].msgtype == "sensor_msgs/msg/PointCloud2" and self.config.compression.type=="raw") 
+            or (topic[1].msgtype == "point_cloud_interfaces/msg/CompressedPointCloud2" and not self.config.compression.type=="raw")
         ]
 
         def print_available_topics_and_exit():

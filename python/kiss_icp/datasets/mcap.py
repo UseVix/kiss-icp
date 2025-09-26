@@ -92,7 +92,8 @@ class McapDataloader:
         schema_id = [
             schema.id
             for schema in self.summary.schemas.values()
-            if schema.name == "sensor_msgs/msg/PointCloud2"
+            if (schema.name == "sensor_msgs/msg/PointCloud2" and self.config.compression.type=="raw") 
+            or (schema.name == "point_cloud_interfaces/msg/CompressedPointCloud2" and not self.config.compression.type=="raw")
         ][0]
 
         point_cloud_topics = [

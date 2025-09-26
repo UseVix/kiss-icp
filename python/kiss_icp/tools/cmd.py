@@ -214,7 +214,6 @@ def kiss_icp_pipeline(
 
     from kiss_icp.datasets import dataset_factory
     from kiss_icp.pipeline import OdometryPipeline
-
     OdometryPipeline(
         dataset=dataset_factory(
             dataloader=dataloader,
@@ -223,6 +222,7 @@ def kiss_icp_pipeline(
             sequence=sequence,
             topic=topic,
             meta=meta,
+            config=config,
         ),
         config=config,
         visualize=visualize,

@@ -1,0 +1,12 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/risalinux/compression_ws/src/kiss-icp/python/cmake_install.cmake",
+		"/home/risalinux/compression_ws/src/kiss-icp/python/kiss_icp/cmake_install.cmake",
+		"/home/risalinux/compression_ws/src/kiss-icp/python/kiss_icp/core/cmake_install.cmake",
+		"/home/risalinux/compression_ws/src/kiss-icp/python/kiss_icp/metrics/cmake_install.cmake",
+		"/home/risalinux/compression_ws/src/kiss-icp/python/kiss_icp/pipeline/cmake_install.cmake",
+		"/home/risalinux/compression_ws/src/kiss-icp/python/kiss_icp/pybind/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

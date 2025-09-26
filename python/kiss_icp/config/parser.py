@@ -35,6 +35,7 @@ from kiss_icp.config.config import (
     DataConfig,
     MappingConfig,
     RegistrationConfig,
+    CompressionConfig,
 )
 
 
@@ -45,6 +46,7 @@ class KISSConfig(BaseSettings):
     registration: RegistrationConfig = RegistrationConfig()
     mapping: MappingConfig = MappingConfig()
     adaptive_threshold: AdaptiveThresholdConfig = AdaptiveThresholdConfig()
+    compression: CompressionConfig = CompressionConfig()
 
 
 def _yaml_source(config_file: Optional[Path]) -> Dict[str, Any]:
@@ -68,7 +70,6 @@ def load_config(config_file: Optional[Path]) -> KISSConfig:
     """Load configuration from an optional yaml file."""
 
     config = KISSConfig(**_yaml_source(config_file))
-
     # Check if there is a possible mistake
     if config.data.max_range < config.data.min_range:
         print("[WARNING] max_range is smaller than min_range, settng min_range to 0.0")

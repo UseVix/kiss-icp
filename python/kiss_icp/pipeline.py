@@ -58,7 +58,6 @@ class OdometryPipeline:
         # Config and output dir
         self.config = load_config(config)
         self.results_dir = None
-
         # Pipeline
         self.odometry = KissICP(config=self.config)
         self.results = PipelineResults()

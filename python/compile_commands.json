@@ -1,0 +1,50 @@
+[
+{
+  "directory": "/home/risalinux/compression_ws/src/kiss-icp/python/kiss_icp/core",
+  "command": "/usr/bin/c++ -DCERES_EXPORT_INTERNAL_SYMBOLS -DFMT_LOCALE -DFMT_SHARED -DGFLAGS_IS_A_DLL=0 -DGOOGLE_GLOG_DLL_DECL=\"\" -DGOOGLE_GLOG_DLL_DECL_FOR_UNITTESTS=\"\" -I/home/risalinux/compression_ws/src/kiss-icp/cpp/kiss_icp/core -I/home/risalinux/compression_ws/src/kiss-icp/cpp -isystem /usr/include/eigen3 -isystem /opt/ros/humble/include -O3 -DNDEBUG -fPIC -fdiagnostics-color=always -Werror -Wall -Wextra -pedantic -Wcast-align -Wcast-qual -Wconversion -Wdisabled-optimization -Woverloaded-virtual -o CMakeFiles/kiss_icp_core.dir/Registration.cpp.o -c /home/risalinux/compression_ws/src/kiss-icp/cpp/kiss_icp/core/Registration.cpp",
+  "file": "/home/risalinux/compression_ws/src/kiss-icp/cpp/kiss_icp/core/Registration.cpp",
+  "output": "kiss_icp/core/CMakeFiles/kiss_icp_core.dir/Registration.cpp.o"
+},
+{
+  "directory": "/home/risalinux/compression_ws/src/kiss-icp/python/kiss_icp/core",
+  "command": "/usr/bin/c++ -DCERES_EXPORT_INTERNAL_SYMBOLS -DFMT_LOCALE -DFMT_SHARED -DGFLAGS_IS_A_DLL=0 -DGOOGLE_GLOG_DLL_DECL=\"\" -DGOOGLE_GLOG_DLL_DECL_FOR_UNITTESTS=\"\" -I/home/risalinux/compression_ws/src/kiss-icp/cpp/kiss_icp/core -I/home/risalinux/compression_ws/src/kiss-icp/cpp -isystem /usr/include/eigen3 -isystem /opt/ros/humble/include -O3 -DNDEBUG -fPIC -fdiagnostics-color=always -Werror -Wall -Wextra -pedantic -Wcast-align -Wcast-qual -Wconversion -Wdisabled-optimization -Woverloaded-virtual -o CMakeFiles/kiss_icp_core.dir/VoxelHashMap.cpp.o -c /home/risalinux/compression_ws/src/kiss-icp/cpp/kiss_icp/core/VoxelHashMap.cpp",
+  "file": "/home/risalinux/compression_ws/src/kiss-icp/cpp/kiss_icp/core/VoxelHashMap.cpp",
+  "output": "kiss_icp/core/CMakeFiles/kiss_icp_core.dir/VoxelHashMap.cpp.o"
+},
+{
+  "directory": "/home/risalinux/compression_ws/src/kiss-icp/python/kiss_icp/core",
+  "command": "/usr/bin/c++ -DCERES_EXPORT_INTERNAL_SYMBOLS -DFMT_LOCALE -DFMT_SHARED -DGFLAGS_IS_A_DLL=0 -DGOOGLE_GLOG_DLL_DECL=\"\" -DGOOGLE_GLOG_DLL_DECL_FOR_UNITTESTS=\"\" -I/home/risalinux/compression_ws/src/kiss-icp/cpp/kiss_icp/core -I/home/risalinux/compression_ws/src/kiss-icp/cpp -isystem /usr/include/eigen3 -isystem /opt/ros/humble/include -O3 -DNDEBUG -fPIC -fdiagnostics-color=always -Werror -Wall -Wextra -pedantic -Wcast-align -Wcast-qual -Wconversion -Wdisabled-optimization -Woverloaded-virtual -o CMakeFiles/kiss_icp_core.dir/VoxelUtils.cpp.o -c /home/risalinux/compression_ws/src/kiss-icp/cpp/kiss_icp/core/VoxelUtils.cpp",
+  "file": "/home/risalinux/compression_ws/src/kiss-icp/cpp/kiss_icp/core/VoxelUtils.cpp",
+  "output": "kiss_icp/core/CMakeFiles/kiss_icp_core.dir/VoxelUtils.cpp.o"
+},
+{
+  "directory": "/home/risalinux/compression_ws/src/kiss-icp/python/kiss_icp/core",
+  "command": "/usr/bin/c++ -DCERES_EXPORT_INTERNAL_SYMBOLS -DFMT_LOCALE -DFMT_SHARED -DGFLAGS_IS_A_DLL=0 -DGOOGLE_GLOG_DLL_DECL=\"\" -DGOOGLE_GLOG_DLL_DECL_FOR_UNITTESTS=\"\" -I/home/risalinux/compression_ws/src/kiss-icp/cpp/kiss_icp/core -I/home/risalinux/compression_ws/src/kiss-icp/cpp -isystem /usr/include/eigen3 -isystem /opt/ros/humble/include -O3 -DNDEBUG -fPIC -fdiagnostics-color=always -Werror -Wall -Wextra -pedantic -Wcast-align -Wcast-qual -Wconversion -Wdisabled-optimization -Woverloaded-virtual -o CMakeFiles/kiss_icp_core.dir/Preprocessing.cpp.o -c /home/risalinux/compression_ws/src/kiss-icp/cpp/kiss_icp/core/Preprocessing.cpp",
+  "file": "/home/risalinux/compression_ws/src/kiss-icp/cpp/kiss_icp/core/Preprocessing.cpp",
+  "output": "kiss_icp/core/CMakeFiles/kiss_icp_core.dir/Preprocessing.cpp.o"
+},
+{
+  "directory": "/home/risalinux/compression_ws/src/kiss-icp/python/kiss_icp/core",
+  "command": "/usr/bin/c++ -DCERES_EXPORT_INTERNAL_SYMBOLS -DFMT_LOCALE -DFMT_SHARED -DGFLAGS_IS_A_DLL=0 -DGOOGLE_GLOG_DLL_DECL=\"\" -DGOOGLE_GLOG_DLL_DECL_FOR_UNITTESTS=\"\" -I/home/risalinux/compression_ws/src/kiss-icp/cpp/kiss_icp/core -I/home/risalinux/compression_ws/src/kiss-icp/cpp -isystem /usr/include/eigen3 -isystem /opt/ros/humble/include -O3 -DNDEBUG -fPIC -fdiagnostics-color=always -Werror -Wall -Wextra -pedantic -Wcast-align -Wcast-qual -Wconversion -Wdisabled-optimization -Woverloaded-virtual -o CMakeFiles/kiss_icp_core.dir/Threshold.cpp.o -c /home/risalinux/compression_ws/src/kiss-icp/cpp/kiss_icp/core/Threshold.cpp",
+  "file": "/home/risalinux/compression_ws/src/kiss-icp/cpp/kiss_icp/core/Threshold.cpp",
+  "output": "kiss_icp/core/CMakeFiles/kiss_icp_core.dir/Threshold.cpp.o"
+},
+{
+  "directory": "/home/risalinux/compression_ws/src/kiss-icp/python/kiss_icp/metrics",
+  "command": "/usr/bin/c++  -I/home/risalinux/compression_ws/src/kiss-icp/cpp/kiss_icp/metrics -I/home/risalinux/compression_ws/src/kiss-icp/cpp -isystem /usr/include/eigen3 -O3 -DNDEBUG -fPIC -fdiagnostics-color=always -Werror -Wall -Wextra -pedantic -Wcast-align -Wcast-qual -Wconversion -Wdisabled-optimization -Woverloaded-virtual -o CMakeFiles/kiss_icp_metrics.dir/Metrics.cpp.o -c /home/risalinux/compression_ws/src/kiss-icp/cpp/kiss_icp/metrics/Metrics.cpp",
+  "file": "/home/risalinux/compression_ws/src/kiss-icp/cpp/kiss_icp/metrics/Metrics.cpp",
+  "output": "kiss_icp/metrics/CMakeFiles/kiss_icp_metrics.dir/Metrics.cpp.o"
+},
+{
+  "directory": "/home/risalinux/compression_ws/src/kiss-icp/python/kiss_icp/pipeline",
+  "command": "/usr/bin/c++ -DCERES_EXPORT_INTERNAL_SYMBOLS -DFMT_LOCALE -DFMT_SHARED -DGFLAGS_IS_A_DLL=0 -DGOOGLE_GLOG_DLL_DECL=\"\" -DGOOGLE_GLOG_DLL_DECL_FOR_UNITTESTS=\"\" -I/home/risalinux/compression_ws/src/kiss-icp/cpp/kiss_icp/pipeline -I/home/risalinux/compression_ws/src/kiss-icp/cpp -isystem /usr/include/eigen3 -isystem /opt/ros/humble/include -O3 -DNDEBUG -fPIC -fdiagnostics-color=always -Werror -Wall -Wextra -pedantic -Wcast-align -Wcast-qual -Wconversion -Wdisabled-optimization -Woverloaded-virtual -o CMakeFiles/kiss_icp_pipeline.dir/KissICP.cpp.o -c /home/risalinux/compression_ws/src/kiss-icp/cpp/kiss_icp/pipeline/KissICP.cpp",
+  "file": "/home/risalinux/compression_ws/src/kiss-icp/cpp/kiss_icp/pipeline/KissICP.cpp",
+  "output": "kiss_icp/pipeline/CMakeFiles/kiss_icp_pipeline.dir/KissICP.cpp.o"
+},
+{
+  "directory": "/home/risalinux/compression_ws/src/kiss-icp/python/kiss_icp/pybind",
+  "command": "/usr/bin/c++ -DCERES_EXPORT_INTERNAL_SYMBOLS -DFMT_LOCALE -DFMT_SHARED -DGFLAGS_IS_A_DLL=0 -DGOOGLE_GLOG_DLL_DECL=\"\" -DGOOGLE_GLOG_DLL_DECL_FOR_UNITTESTS=\"\" -Dkiss_icp_pybind_EXPORTS -I/home/risalinux/compression_ws/src/kiss-icp/cpp -isystem /usr/include/python3.10 -isystem /usr/include/eigen3 -isystem /opt/ros/humble/include -O3 -DNDEBUG -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -o CMakeFiles/kiss_icp_pybind.dir/kiss_icp_pybind.cpp.o -c /home/risalinux/compression_ws/src/kiss-icp/python/kiss_icp/pybind/kiss_icp_pybind.cpp",
+  "file": "/home/risalinux/compression_ws/src/kiss-icp/python/kiss_icp/pybind/kiss_icp_pybind.cpp",
+  "output": "kiss_icp/pybind/CMakeFiles/kiss_icp_pybind.dir/kiss_icp_pybind.cpp.o"
+}
+]
